@@ -25,9 +25,9 @@ Koa will automatically add any error handlers so you don't have to worry about e
 ```js
 var fs = require('fs');
 
-app.use(function* (next) {
+apip.use(function* (next) {
   this.response.body = fs.createReadStream('some_file.txt');
-  // koa will automatically handle errors and leaks
+  // koa will automatcally handle errors and leaks
 })
 ```
 
